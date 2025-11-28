@@ -1,0 +1,376 @@
+/* CSS Reset — Meyerweb */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Reset: HTML5 element display fixes */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset */
+
+:root {
+  --alert-blue: #0367A6;
+  --steel-blue: #20638C;
+  --med-blue: #4E84A6;
+  --lt-blue: #79BED9;
+
+  --lt-gray: #D7D9D9;
+  --dk-gray: #3A3F44;
+  --error-red: #C44D4D;
+
+  --heading-fonts: 'Bebas Neue', 'Impact', sans-serif;
+  --body-fonts: 'Nunito Sans', Tahoma, sans-serif;
+
+}
+
+body {
+  font-family: var(--body-fonts);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--dk-gray);
+  background-color: #ffffff;
+}
+
+h2,
+h3 {
+  font-family: var(--heading-fonts);
+  color: var(--steel-blue);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--dk-gray);
+  line-height: 1.5;
+}
+
+header {
+  background-image: url("images/swiss-valley.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 180px 0;
+}
+
+.header-container {
+  width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--heading-fonts);
+  font-size: 5rem;
+  color: var(--dk-gray);
+  margin: 0 0 20px;
+}
+
+header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul {
+  display: inline-flex;
+  gap: 100px;
+  margin: 50px;
+  padding: 0;
+}
+
+nav a {
+  font-family: var(--heading-fonts);
+  font-size: 1.5rem;
+  letter-spacing: .05em;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--steel-blue);
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--lt-blue);
+  color: #fff;
+}
+
+nav a.active {
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.main-container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.intro {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.intro h2 {
+  margin-bottom: 20px;
+}
+
+.intro p {
+  max-width: 60ch;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.information-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.cards {
+  flex: 1;
+}
+
+.cards img {
+  width: 590px;
+  height: 360px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.cards p {
+  max-width: 590px;
+  text-align: left;
+}
+
+footer {
+  background-color: var(--steel-blue);
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.contact {
+  max-width: 1280px;
+  margin: 60px auto;
+
+  display: grid;
+  grid-template-columns: 350px 350px;
+  column-gap: 40px;
+  row-gap: 40px;
+  padding-left: 270px;
+  padding-right: 0;
+}
+
+.contact>div:first-child {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 350px;
+}
+
+
+.contact h2 {
+  margin-bottom: 0;
+}
+
+.contact p {
+  max-width: 350px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.contact-image {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+}
+
+.contact-image img {
+  display: block;
+  width: 350px;
+  height: auto;
+  margin-bottom: -20px;
+}
+
+.form {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: start;
+  width: 100%;
+  justify-self: start;
+  padding-top: 60px;
+}
+
+.form form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: -10px;
+}
+
+.form input,
+.form textarea {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid var(--dk-gray);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: var(--body-fonts);
+  margin-bottom: 5px;
+}
+
+.form input,
+.form textarea,
+.form fieldset {
+  box-sizing: border-box;
+}
+
+#my-comments {
+  height: 150px;
+  resize: vertical;
+}
+
+.form fieldset {
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
+
+  border: 1px solid var(--dk-gray);
+  border-radius: 4px;
+
+  padding: 10px 16px 12px 16px;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form legend {
+  padding: 0 4px;
+  font-weight: 600;
+}
+
+.form fieldset .options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  transform: scale(1.2);
+  accent-color: var(--steel-blue);
+  margin-top: 2px;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form input[type="radio"]:focus {
+  outline: 3px solid var(--alert-blue);
+  outline-offset: 2px;
+}
+
+.form input:user-invalid,
+.form textarea:user-invalid {
+  border-color: var(--error-red);
+}
+
+.form fieldset:has(input:user-invalid) {
+  border-color: var(--error-red);
+}
+
+#my-submit {
+  padding: 12px;
+  font-family: var(--heading-fonts);
+  font-size: 2rem;
+  letter-spacing: .03em;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--steel-blue);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#my-submit:hover {
+  background-color: var(--med-blue);
+  color: #ffffff;
+}
+
+#my-submit:focus {
+  outline: 3px solid var(--lt-blue);
+  outline-offset: 2px;
+}

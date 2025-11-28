@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Aaron Wolske">
+  <meta name="description"
+    content="Contact us to learn more about Les Hauts Monts Resort and plan your Swiss Alps getaway.">
+  <title>Les Hauts Monts Resort | Contact</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1><a href="index.html">Les Hauts Monts</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Accommodations</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+
+      <section class="contact">
+
+        <!-- Text for left column -->
+        <div>
+          <h2>Contact Us</h2>
+          <p>
+            Please reach out to us with any questions or concerns.
+            We are happy to help you plan your dream vacation with us!
+            Required fields marked with a <span class="required">*</span>
+          </p>
+        </div>
+
+        <!-- Image for left column -->
+        <div class="contact-image">
+          <img src="images/swiss-peak.jpg" alt="flowing creek through forest with majestic mountain behind" width="350"
+            height="455">
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form">
+          <form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank">
+
+            <label for="my-name">Name<span class="required"> *</span></label>
+            <input type="text" id="my-name" name="my-name" required>
+
+            <label for="my-email">Email<span class="required"> *</span></label>
+            <input type="email" id="my-email" name="my-email" required>
+
+            <label for="my-phone">Phone<span class="required"> *</span></label>
+            <input type="tel" id="my-phone" name="my-phone" pattern="[0-9]*" inputmode="numeric" required>
+
+            <fieldset>
+              <legend>Preferred Method of Contact <span class="required">*</span></legend>
+
+              <div class="options">
+                <div class="option">
+                  <input type="radio" id="pref-email" name="contact-pref" value="email" required>
+                  <label for="pref-email">Email</label>
+                </div>
+
+                <div class="option">
+                  <input type="radio" id="pref-phone" name="contact-pref" value="phone">
+                  <label for="pref-phone">Phone</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <label for="my-comments">Comments<span class="required"> *</span></label>
+            <textarea id="my-comments" name="my-comments" required></textarea>
+
+            <input type="submit" id="my-submit" value="Submit">
+
+          </form>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright ©2023 &ndash; Les Hauts Monts &ndash; This site is for educational purposes only</p>
+  </footer>
+
+</body>
